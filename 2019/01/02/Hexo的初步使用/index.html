@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <title>ToolMu</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/gitment.css">
+    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_859455_eaq7v6w8ktj.css">
+</head>
+<body>
+<header class="header">
+    <div class="header-inner">
+        <div class="header-title">
+
+        </div>
+        <nav class="header-nav">
+            
+            <a href="/" class="header-nav-link">
+                首页
+            </a>
+            
+
+            
+            <a href="/archives" class="header-nav-link">
+                归档
+            </a>
+            
+
+            
+            <a href="/tags" class="header-nav-link">
+                标签
+            </a>
+            
+
+            
+            <a href="/about/" class="header-nav-link">
+                关于
+            </a>
+            
+        </nav>
+    </div>
+</header>
+<header class="mobile-header">
+    <div class="mobile-nav">
+        <div class="mobile-nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="mobile-nav-title">
+            <a href="/" class="mobile-nav-title-link">ToolMu's Blog</a>
+        </div>
+
+    </div>
+    <nav class="mobile-menu">
+        <ul class="mobile-menu-list">
+            <li class="mobile-menu-item">
+                <i class="iconfont icon-home"></i>
+                <a href="/" class="mobile-nav-link">首页</a>
+            </li>
+            <li class="mobile-menu-item">
+                <i class="iconfont icon-archive"></i>
+                <a href="/archives" class="mobile-nav-link">归档</a>
+            </li>
+            <li class="mobile-menu-item">
+                <i class="iconfont icon-tag"></i>
+                <a href="/tags" class="mobile-nav-link">标签</a>
+            </li>
+            <li class="mobile-menu-item">
+                <i class="iconfont icon-about"></i>
+                <a href="/about/" class="mobile-nav-link">关于</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="main">
+    <div class="content-inner">
+        <div class="posts">
+    <article class="post-whole">
+        <div class="post-title">
+            <h2 class="title">Hexo的初步使用</h2>
+            <div class="post-meta">
+                <span class="post-time">2019-01-02</span>
+                
+                <span class="post-category">
+                    
+                    <a class="category" href="/categories/笔记/">笔记</a>
+                    
+                </span>
+                
+                <span class="post-visit"> 阅读次数：<span id="busuanzi_value_page_pv"></span></span>
+            </div>
+        </div>
+        <div class="post-toc" id="post-toc">
+    <strong class="post-toc-title">目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo的初步使用"><span class="toc-text">Hexo的初步使用</span></a></li></ol>
+    <div class="back-to-top" id="back-to-top">
+        <a href="javascript:void(0);">回到顶部</a>
+    </div>
+</div>
+        <div class="post-content">
+            <h2 id="Hexo的初步使用"><a href="#Hexo的初步使用" class="headerlink" title="Hexo的初步使用"></a>Hexo的初步使用</h2><ol>
+<li><p>先厚颜无耻的贴上<a href="https://hexo.io/zh-cn/docs" target="_blank" rel="noopener">官方文档</a>，反正官方啥都有。逃～</p>
+</li>
+<li><p>补上我搭建的操作命令（ubuntu 16.04）</p>
+<ul>
+<li><p>安装node</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">先下好node源码... （我这里下的是10.15版）</span><br><span class="line"></span><br><span class="line">tar xvf node-v10.15.0.tar.gz</span><br><span class="line">cd node-v10.16.0</span><br><span class="line"></span><br><span class="line">./configure</span><br><span class="line"></span><br><span class="line">make</span><br><span class="line">sudo make install</span><br><span class="line"></span><br><span class="line">sudo cp /usr/local/bin/node /usr/bin</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>检查node和npm的安装情况</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">node -v   </span><br><span class="line"><span class="meta">-&gt;</span> v10.15.0</span><br><span class="line">npm -v    </span><br><span class="line"><span class="meta">-&gt;</span> 6.4.1</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装Hexo</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>开始使用（具体操作见文档）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br><span class="line"></span><br><span class="line">hexo new "&lt;你的标题&gt;" # 新建文章</span><br><span class="line"></span><br><span class="line">hexo g      # 文章构建</span><br><span class="line">hexo s      # 起本地服务  默认在4000端口</span><br><span class="line">hexo clean  # 对构建部分的清理</span><br><span class="line"></span><br><span class="line">hexo d      # 部署（需要配置额外内容）</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改主题</p>
+<blockquote>
+<p>这里使用的sky这个主题（虽然NexT是主流）。该主题的相关内容见github。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/iJinxin/hexo-theme-sky themes/sky</span><br><span class="line"></span><br><span class="line">vim _config.yml</span><br><span class="line"><span class="meta">--&gt;</span> theme: landscape [to] theme: sky</span><br></pre></td></tr></table></figure></blockquote>
+</li>
+</ul>
+</li>
+</ol>
+
+        </div>
+        
+        <div class="post-tag">
+            
+            <a class="tag" href="/tags/Tool/" title="Tool">Tool</a>
+            
+        </div>
+        
+    </article>
+</div>
+<div class="paginator">
+    
+        
+        
+    
+</div>
+<div id="comment-container"></div>
+    </div>
+</div>
+<footer class="footer-social">
+    
+
+    
+
+    
+
+    <div class="footer-copyright">
+        <p class="time-line">
+            &copy;
+            
+            
+            2019
+            &nbsp;<i class="iconfont icon-heart"></i>&nbsp;
+            <a target="_blank" href="https://github.com/iJinxin">ToolMu</a>
+        </p>
+        <p class="theme-info">
+            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  |  Theme -
+            <a target="_blank" href="https://github.com/iJinxin/hexo-theme-sky">Sky</a>
+        </p>
+    </div>
+</footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    
+
+</script>
+</html>
